@@ -1,7 +1,8 @@
+/*jshint esversion: 8 */
+/*jshint sub: true*/
+
 const mongoose = require('mongoose');
-
 const Schema = mongoose.Schema;
-
 const reviews = new Schema({
 	id: {
     type: Number,
