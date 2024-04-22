@@ -107,6 +107,8 @@ celerybeat.pid
 env/
 venv/
 ENV/
+node_modules/
+package-lock.json
 env.bak/
 venv.bak/
 
