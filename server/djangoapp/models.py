@@ -26,7 +26,8 @@ class CarModel(models.Model):
     ]
     type = models.CharField(max_length=10, choices=CAR_TYPES, default='SUV')
     year = models.IntegerField(default=now().year,
-                               validators=[MaxValueValidator(now().year), MinValueValidator(2000)])
+                               validators=[MaxValueValidator(now().year),
+                                           MinValueValidator(2000)])
 
     def __str__(self) -> str:
         return self.name + ' ({})'.format(self.year)
